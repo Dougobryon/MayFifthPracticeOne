@@ -1,0 +1,34 @@
+﻿@model MayFifthPracticeOne.Models.ParticipationOfferings
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ParticipationOfferings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClubMember.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClubMember.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FitnessOffering.GroupTraining)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FitnessOffering.GroupTraining)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParticpationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
